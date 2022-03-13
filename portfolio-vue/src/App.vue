@@ -3,6 +3,15 @@
     <v-main class="background">
       <HomeView></HomeView>
     </v-main>
+    <v-footer
+      class="d-flex"
+      color="accent"
+      padless
+    >
+    <span class="text-caption px-1 white--text">Arlwin Fajardo @ Github Pages - 2022</span>
+    <v-spacer></v-spacer>
+    <span class="text-caption px-1 white--text">Illustrations used: <a white--text href="https://icons8.com">Icons8</a></span>
+    </v-footer>
   </v-app>
 </template>
 
@@ -21,3 +30,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+
+a { color: inherit; } 
+
+</style>

@@ -59,6 +59,7 @@
                 <v-col>
                     <v-img
                         src="https://lun-us.icons8.com/a/F0iYpksziUmDF9wzhr0Q2w/wTV8sn_zQkSaCTunj9MxLg/Illu__Placeholder_.png"
+                        max-height="70vh"
                     ></v-img>
                 </v-col>
             </v-card>
