@@ -1,19 +1,18 @@
 <template>
-    <v-container fluid class="px-10">
-        <v-row class="d-flex justify-space-between align-center">
+    <v-container fluid class="pr-10">
+        <v-row class="d-flex">
             <v-card
-                class="d-flex align-center justify-center"
-                height="150px"
-                width="150px"
+                height="80px"
+                width="80px"
                 color="background"
                 flat
             >
-                <v-avatar
-                    color="accent"
+                <v-img
+                    :src="require('../assets/logo.svg')"
                 >
-                    <span class="white--text text-h5">AF</span>
-                </v-avatar>
+                </v-img>
             </v-card>
+            <v-spacer></v-spacer>
             <v-list
                 class="py-5 background" 
                 two-line
@@ -50,16 +49,18 @@
                         <v-icon
                             class="mx-4"
                             v-for="icon in icons" 
-                            :key="icon"
+                            :key="icon.icon"
                             color="white"
-                        >{{ icon }}</v-icon>
+                            @click="goto(icon.target)"
+                        >{{ icon.icon }}</v-icon>
                     </v-row>
                     <v-spacer></v-spacer>
                 </v-col>
                 <v-col>
                     <v-img
                         src="https://lun-us.icons8.com/a/F0iYpksziUmDF9wzhr0Q2w/wTV8sn_zQkSaCTunj9MxLg/Illu__Placeholder_.png"
-                        max-height="70vh"
+                        height="70vh"
+                        width="42vw"
                     ></v-img>
                 </v-col>
             </v-card>
@@ -76,11 +77,20 @@ export default {
             "ABOUT"
         ],
         icons: [
-            "mdi-gmail",
-            "mdi-github",
-            "mdi-linkedin"
+            {icon: "mdi-gmail",
+            target: "mailto:arlwin.fajardo@gmail.com"},
+            { icon: "mdi-github",
+            target: "https://github.com/Arlwin"},
+            { icon: "mdi-linkedin",
+            target: "https://www.linkedin.com/in/arlwinfajardo/"}
         ]
     }),
+
+    methods: {
+        goto(url) {
+            window.location.href = url;
+        }
+    }
 }
 </script>
 

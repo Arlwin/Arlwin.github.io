@@ -33,6 +33,9 @@ export default {
 
 <style scoped>
 
-a { color: inherit; } 
+a, a:visited, a:hover, a:active { 
+  color: white; 
+  text-decoration:none;  
+} 
 
 </style>
