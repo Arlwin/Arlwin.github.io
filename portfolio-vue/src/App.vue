@@ -8,7 +8,8 @@
       color="accent"
       padless
     >
-    <span class="text-caption px-1 white--text">Arlwin Fajardo @ Github Pages - 2022</span>
+    <!-- <span class="text-caption px-1 white--text">Arlwin Fajardo @ Github Pages - 2022</span> -->
+    <span class="text-caption px-1 white--text">Work In Progress</span>
     <v-spacer></v-spacer>
     <span class="text-caption px-1 white--text">Illustrations used: <a white--text href="https://icons8.com">Icons8</a></span>
     </v-footer>
