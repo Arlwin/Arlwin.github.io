@@ -9,7 +9,9 @@ const Menu = () => {
   return (
     <>
       <p><a href="#home">Home</a></p>
-      <p><a href="#about">About</a></p>
+      <p><a href="#about">About Me</a></p>
+      <p><a href="#experiences">Experience</a></p>
+      <p><a href="#projects">Projects</a></p>
     </>
   );
 }
@@ -28,10 +30,10 @@ const Navbar = () => {
           <Menu />
         </div>
       </div>
-      <div className="navbar-sign">
+      {/* <div className="navbar-sign">
         <p>Sign In</p>
         <button type="button">Sign up</button>
-      </div>
+      </div> */}
       <div className="navbar-menu">
         { toggleMenu 
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
@@ -41,10 +43,10 @@ const Navbar = () => {
             <div className="navbar-menu_container scale-up-center">
               <div className="navbar-menu_container-links">
                 <Menu />
-                <div className="navbar-menu_container-links-sign">
+                {/* <div className="navbar-menu_container-links-sign">
                   <p>Sign In</p>
                   <button type="button">Sign up</button>
-                </div>
+                </div> */}
               </div>
             </div>
           )}

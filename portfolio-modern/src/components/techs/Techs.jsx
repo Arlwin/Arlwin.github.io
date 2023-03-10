@@ -2,12 +2,16 @@ import React from 'react';
 import './techs.css';
 
 import { FaJava } from 'react-icons/fa';
-import { SiSpringboot, SiReact, SiMysql, SiAmazonaws, SiJavascript } from 'react-icons/si';
+import { SiSpringboot, SiReact, SiMysql, SiAmazonaws, SiJavascript, SiPython, SiFlutter } from 'react-icons/si';
 
 const techStack = [
   {
     "name": "Java",
     "icon": FaJava,
+  },
+  {
+    "name": "Python",
+    "icon": SiPython,
   },
   {
     "name": "Springboot",
@@ -22,6 +26,10 @@ const techStack = [
     "icon": SiReact,
   },
   {
+    "name": "Flutter",
+    "icon": SiFlutter,
+  },
+  {
     "name": "MySQL",
     "icon": SiMysql,
   },
@@ -34,15 +42,19 @@ const techStack = [
 const Techs = () => {
   return (
     <div className="techs section__padding">
-
+      <div className="techs-heading">
+        <h1 className="gradient__text"> Tech Stack </h1>
+      </div>
+      <div className="techs-content">
         {
-          techStack.map((tech) => (
-            <div className="techs_icon">
+          techStack.map((tech, i) => (
+            <div className="techs_icon" key={tech.name + i}>
               < tech.icon />
-              <p> { tech.name } </p>
+              <p> {tech.name} </p>
             </div>
           ))
         }
+      </div>
     </div>
   )
 }

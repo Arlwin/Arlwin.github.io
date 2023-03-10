@@ -22,7 +22,7 @@ const About = () => {
         />
         <Feature
           title="Work Experience"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis eget dolor id imperdiet. Morbi nulla lorem, scelerisque vitae velit a, vehicula posuere nisl. Phasellus quis feugiat lorem."
+          text="Lorem ipsuganern  sit amet, consectetur adipiscing elit. Pellentesque iaculis eget dolor id imperdiet. Morbi nulla lorem, scelerisque vitae velit a, vehicula posuere nisl. Phasellus quis feugiat lorem."
         />
         <Feature
           title="Education"
