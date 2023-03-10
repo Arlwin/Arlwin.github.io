@@ -1,4 +1,4 @@
-import './About.css';
+import './About.scss';
 import { aboutMeText } from '../Constants';
 
 import React, { Component } from 'react'
@@ -49,8 +49,8 @@ export class About extends Component {
                 id = "profile"
                 alt = "Profile"
                 src = { PROFILE }
+                className = 'avatar'
                 sx = {{
-                    border: 'solid 1px black'
                 }}
             />
         </Grid>

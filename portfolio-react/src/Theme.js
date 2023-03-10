@@ -3,16 +3,16 @@ import { createTheme } from '@mui/material/styles';
 export const customTheme = createTheme({
   palette: {
     primary: {
-        main: '#E5E5E5',
+        main: '#018790',
     },
     secondary: {
-        main: '#14213D',
+        main: '#E8DAD0',
     },
     accent: {
-        main: '#FCA311'
+        main: '#DB504A'
     },
     text: {
-        main: '#FFFFFF'
+        main: '#2B2726'
     },
     contrastThreshold: 3,
     tonalOffset: 0.2,

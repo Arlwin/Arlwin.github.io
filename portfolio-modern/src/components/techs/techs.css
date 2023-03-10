@@ -1,0 +1,32 @@
+.techs {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.techs_icon {
+
+    flex: 1;
+    max-width: 150px;
+    min-width: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 48px;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.techs_icon p {
+
+    margin: 1rem;
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.6;
+}
