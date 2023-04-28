@@ -11,8 +11,8 @@ export default function Skills() {
       </h1>
 
       {/* Languages */}
-      <div className="flex w-[200vw]">
-        <div className="flex w-[100vw] justify-around animate-carousel-initial">
+      <div className="flex md:w-[200vw]">
+        <div className="flex md:w-[100vw] w-[200vw] justify-around animate-carousel-initial">
           {
             LANGUAGES.map((language, i) => (
               <div key={i} className="flex flex-col items-center space-y-3">
@@ -22,7 +22,7 @@ export default function Skills() {
             ))
           }
         </div>
-        <div className="flex w-[100vw] justify-around animate-carousel-next">
+        <div className="flex md:w-[100vw] justify-around animate-carousel-next">
           {
             LANGUAGES.map((language, i) => (
               <div key={i} className="flex flex-col items-center space-y-3">

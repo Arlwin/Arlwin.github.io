@@ -12,10 +12,10 @@ const nunito = Nunito({ subsets: ['latin'] })
 export default function Home() {
   return (
 
-    <div className={`${nunito.className}`}>
+    <div className={`${nunito.className} flex flex-col`}>
       <Navbar/>
 
-      <main className="flex flex-col items-stretch px-48">
+      <main className="flex flex-col items-stretch md:px-48 px-10">
         <About />
         <Skills />
         <Experience />

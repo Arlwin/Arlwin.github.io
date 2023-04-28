@@ -1,5 +1,4 @@
 import { CONTACTS } from "@/constants";
-import { SiGmail } from "react-icons/si";
 
 export default function Contact() {
 
