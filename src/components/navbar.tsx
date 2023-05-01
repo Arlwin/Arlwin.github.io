@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from 'next/router'
 import { HiMenu } from 'react-icons/hi'
 import { MdClose } from 'react-icons/md'
@@ -25,7 +25,9 @@ export default function Navbar() {
     tabIndex = tabs.findIndex((tab) => tab.toLowerCase() === anchor);
   } 
 
-  const [activeTab, setActiveTab] = useState(tabIndex);
+  const [activeTab, setActiveTab] = useState(0);
+  useEffect(() => setActiveTab(tabIndex), [tabIndex]);
+
   const [openSidebar, setOpenSidebar] = useState(false);
 
   return (

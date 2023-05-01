@@ -141,7 +141,7 @@ export const EXPERIENCES: {
   description: string,
 }[] = [
   {
-    company: '',
+    company: 'Trend Micro',
     years: '2018 - 2020',
     title: 'Technical Support',
     description: 
@@ -159,7 +159,7 @@ export const EXPERIENCES: {
       `
   },
   {
-    company: '',
+    company: 'Trend Micro',
     years: '2022 - 2023',
     title: 'Senior Cloud Software Engineer',
     description: 

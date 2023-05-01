@@ -6,11 +6,52 @@ export default function Experience() {
   return (
 
     <div className="flex flex-col justify-center h-screen" id="experience">
-      <h1 className="text-4xl text-center mb-28">
+      
+      <h1 className="text-3xl md:text-4xl text-center md:mb-28 mb-8">
         My journey so far
       </h1>
 
-      <div className={`grid grid-cols-4 h-[50%]`}>
+      {/* Mobile */}
+      <div className="flex md:hidden flex-col-reverse">
+        {
+          EXPERIENCES.map((exp, i) => (
+            <div 
+              key={i}
+              className="flex items-stretch space-x-5"
+            >
+              <div className="flex flex-col items-center">
+                <span
+                  className={`flex-grow bg-black ${i !== EXPERIENCES.length - 1 ? 'w-1': '' } `}
+                />
+                <span
+                  className="border-black border-4 h-4 w-4 rounded-full cursor-pointer transition hover:bg-black hover:scale-110"
+                />
+                <span
+                  className={`flex-grow bg-black ${i !== 0 ? 'w-1': '' } `}
+                />
+              </div>
+
+              <div className="flex flex-col flex-grow py-3">
+                <span className="text-md">
+                  { exp.company } 
+                </span>
+                <span className="text-lg font-semibold">
+                  { exp.title }
+                </span>
+                <span className="text-xs italic">
+                  { exp.years }
+                </span>
+                <span className="text-xs py-2">
+                  { exp.description }
+                </span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      {/* Desktop */}
+      <div className={`hidden md:grid grid-cols-4 h-[50%]`}>
         {
           EXPERIENCES.map((exp, i) => (
             <div 
