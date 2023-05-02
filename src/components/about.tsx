@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function About() {
 
   return (
-    <div className="flex flex-col md:flex-row justify-center h-screen" id="about">
+    <section className="flex flex-col md:flex-row justify-center h-screen" id="about">
 
       {/* Logo */}
       <div className="flex basis-1/2 justify-center items-center">
@@ -23,12 +23,12 @@ export default function About() {
           Hi &#128075;, 
           I&apos;m Arlwin!
         </h1>
-        <p className='text-3xl text-center'>
+        <h2 className='text-3xl text-center'>
           I&apos;m a Full Stack Developer and I like building applications and websites.
 
-        </p>
+        </h2>
       </div>
 
-    </div>
+    </section>
   )
 }

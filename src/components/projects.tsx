@@ -6,10 +6,10 @@ import { RxExternalLink } from 'react-icons/rx';
 export default function Projects() {
 
   return (
-    <div className="flex flex-col justify-center h-screen" id="projects">
-      <h1 className="text-3xl text-center mb-20">
+    <section className="flex flex-col justify-center h-screen" id="projects">
+      <h2 className="text-3xl text-center mb-20">
         Here are some of my projects
-      </h1>
+      </h2>
 
       {/* Mobile */}
       <div className="flex flex-col space-y-14 md:hidden">
@@ -39,9 +39,9 @@ export default function Projects() {
   
             {/* Info */}
             <div className="col-span-2 flex flex-col space-y-1 pr-3 py-1">
-              <span className="text-2xl font-semibold">{ project.title }</span>
-              <span className="text-xs italic">{ project.years }</span>
-              <span className="flex-grow text-md">{ project.description }</span>
+              <h3 className="text-2xl font-semibold">{ project.title }</h3>
+              <h5 className="text-xs italic">{ project.years }</h5>
+              <p className="flex-grow text-md">{ project.description }</p>
             </div>
           </div>
         ))
@@ -76,15 +76,15 @@ export default function Projects() {
     
               {/* Info */}
               <div className="col-span-2 flex flex-col space-y-1 pr-3 py-1">
-                <span className="text-2xl font-semibold">{ project.title }</span>
-                <span className="text-xs italic">{ project.years }</span>
-                <span className="flex-grow text-md">{ project.description }</span>
+                <h3 className="text-2xl font-semibold">{ project.title }</h3>
+                <h5 className="text-xs italic">{ project.years }</h5>
+                <p className="flex-grow text-md">{ project.description }</p>
               </div>
             </div>
           ))
         }
       </div>
 
-    </div>
+    </section>
   ); 
 }

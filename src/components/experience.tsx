@@ -5,11 +5,11 @@ export default function Experience() {
 
   return (
 
-    <div className="flex flex-col justify-center h-screen" id="experience">
+    <section className="flex flex-col justify-center h-screen" id="experience">
       
-      <h1 className="text-3xl md:text-4xl text-center md:mb-28 mb-8">
+      <h2 className="text-3xl md:text-4xl text-center md:mb-28 mb-8">
         My journey so far
-      </h1>
+      </h2>
 
       {/* Mobile */}
       <div className="flex md:hidden flex-col-reverse">
@@ -32,18 +32,18 @@ export default function Experience() {
               </div>
 
               <div className="flex flex-col flex-grow py-3">
-                <span className="text-md">
+                <h4 className="text-md">
                   { exp.company } 
-                </span>
-                <span className="text-lg font-semibold">
+                </h4>
+                <h3 className="text-lg font-semibold">
                   { exp.title }
-                </span>
-                <span className="text-xs italic">
+                </h3>
+                <h5 className="text-xs italic">
                   { exp.years }
-                </span>
-                <span className="text-xs py-2">
+                </h5>
+                <p className="text-xs py-2">
                   { exp.description }
-                </span>
+                </p>
               </div>
             </div>
           ))
@@ -58,11 +58,11 @@ export default function Experience() {
               key={i} 
               className={`relative grid grid-rows-6 gap-y-2 h-[20%] items-stretch text-center`}
             >
-              <span 
+              <h4 
                 className="flex justify-center items-center text-xl font-semibold"
               >
                 { exp.company }
-              </span>
+              </h4>
 
               <div className="flex items-center">
                 <span 
@@ -73,19 +73,14 @@ export default function Experience() {
                 <span 
                   className={ `basis-1/2 ${i !== EXPERIENCES.length - 1 ? 'bg-black h-1' : ''}` }
                 />
-                
-                { 
-                // ( i === EXPERIENCES.length - 1) && 
-                // <span 
-                //   className="absolute right-0 border-r-4 border-t-4 border-black h-5 w-5 animate-move-right"
-                // /> 
-                }
               </div>
 
-              <span className="text-xs italic">{ exp.years }</span>
-              <span className="text-lg text-center font-semibold w-[50%] mx-auto">
+              <h5 className="text-xs italic">
+                { exp.years }
+              </h5>
+              <h3 className="text-lg text-center font-semibold w-[50%] mx-auto">
                 { exp.title }
-              </span>
+              </h3>
               <p className="text-md text-start py-4 px-5 mt-4">
                 { exp.description }
               </p>
@@ -93,6 +88,6 @@ export default function Experience() {
           ))
         }
       </div>
-    </div>
+    </section>
   ); 
 }

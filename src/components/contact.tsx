@@ -4,10 +4,10 @@ export default function Contact() {
 
   return (
 
-    <div className="flex flex-col justify-center items-center space-y-20 h-screen" id="contact">
-      <h1 className="text-3xl text-center">
+    <section className="flex flex-col justify-center items-center space-y-20 h-screen" id="contact">
+      <h2 className="text-3xl text-center">
          Feel free to reach out!
-      </h1>
+      </h2>
 
       {/* Mobile */}
       <div className="grid grid-cols-2 gap-20 md:hidden">
@@ -46,6 +46,6 @@ export default function Contact() {
           ))
         }
       </div>
-    </div>
+    </section>
   ); 
 }

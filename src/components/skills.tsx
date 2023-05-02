@@ -4,11 +4,11 @@ export default function Skills() {
 
   return (
 
-    <div className="flex flex-col justify-center space-y-10 md:space-y-20 h-screen md:overflow-x-hidden" id="skills">
+    <section className="flex flex-col justify-center space-y-10 md:space-y-20 h-screen md:overflow-x-hidden" id="skills">
       
-      <h1 className="text-3xl md:text-4xl text-center">
+      <h2 className="text-3xl md:text-4xl text-center">
         Here are some of what I currently know
-      </h1>
+      </h2>
 
       {/* Mobile */}
       <div className="md:hidden grid grid-cols-4 gap-x-5 gap-y-7">
@@ -16,7 +16,7 @@ export default function Skills() {
           [...LANGUAGES, ...FRAMEWORKS, ...TOOLS].map((skill, i) => (
             <div key={i} className="flex flex-col items-center space-y-3 hover:animate-[pulse_.5s_ease-out_3]">
               <span className="text-5xl">{ skill.icon }</span>
-              <span className="text-md font-semibold text-center">{ skill.name }</span>
+              <h4 className="text-md font-semibold text-center">{ skill.name }</h4>
           </div>
           ))
         }
@@ -31,7 +31,7 @@ export default function Skills() {
               LANGUAGES.map((language, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ language.icon }</span>
-                  <span className="text-xl font-semibold">{ language.name }</span>
+                  <h4 className="text-xl font-semibold">{ language.name }</h4>
                 </div>
               ))
             }
@@ -41,7 +41,7 @@ export default function Skills() {
               LANGUAGES.map((language, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ language.icon }</span>
-                  <span className="text-xl font-semibold">{ language.name }</span>
+                  <h4 className="text-xl font-semibold">{ language.name }</h4>
                 </div>
               ))
             }
@@ -55,7 +55,7 @@ export default function Skills() {
               FRAMEWORKS.map((framework, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ framework.icon }</span>
-                  <span className="text-xl font-semibold">{ framework.name }</span>
+                  <h4 className="text-xl font-semibold">{ framework.name }</h4>
                 </div>
               ))
             }
@@ -65,7 +65,7 @@ export default function Skills() {
               FRAMEWORKS.map((framework, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ framework.icon }</span>
-                  <span className="text-xl font-semibold">{ framework.name }</span>
+                  <h4 className="text-xl font-semibold">{ framework.name }</h4>
                 </div>
               ))
             }
@@ -79,7 +79,7 @@ export default function Skills() {
               TOOLS.map((tool, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ tool.icon }</span>
-                  <span className="text-xl font-semibold">{ tool.name }</span>
+                  <h4 className="text-xl font-semibold">{ tool.name }</h4>
                 </div>
               ))
             }
@@ -89,14 +89,14 @@ export default function Skills() {
               TOOLS.map((tool, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ tool.icon }</span>
-                  <span className="text-xl font-semibold">{ tool.name }</span>
+                  <h4 className="text-xl font-semibold">{ tool.name }</h4>
                 </div>
               ))
             }
           </div>
         </div>
       </div>
-    </div>
+    </section>
   ); 
 }
 

@@ -31,7 +31,7 @@ export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
-    <div className="fixed top-0 flex justify-between items-center w-[100%] px-10 md:px-48 py-2 md:py-5 bg-white z-10">
+    <nav className="fixed top-0 flex justify-between items-center w-[100%] px-10 md:px-48 py-2 md:py-5 bg-white z-10">
       <h1 className="text-4xl font-extrabold">A</h1>
 
       <div className="md:hidden">
@@ -60,7 +60,7 @@ export default function Navbar() {
               </a>
             </span>
             )
-}
+          }
         </div>
 
       </div>
@@ -80,6 +80,6 @@ export default function Navbar() {
         }
 
       </div>
-    </div>
+    </nav>
   );
 }
