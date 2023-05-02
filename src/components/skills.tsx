@@ -16,7 +16,7 @@ export default function Skills() {
           [...LANGUAGES, ...FRAMEWORKS, ...TOOLS].map((skill, i) => (
             <div key={i} className="flex flex-col items-center space-y-3 hover:animate-[pulse_.5s_ease-out_3]">
               <span className="text-5xl">{ skill.icon }</span>
-              <h4 className="text-md font-semibold text-center">{ skill.name }</h4>
+              <h3 className="text-md font-semibold text-center">{ skill.name }</h3>
           </div>
           ))
         }
@@ -31,7 +31,7 @@ export default function Skills() {
               LANGUAGES.map((language, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ language.icon }</span>
-                  <h4 className="text-xl font-semibold">{ language.name }</h4>
+                  <h3 className="text-xl font-semibold">{ language.name }</h3>
                 </div>
               ))
             }
@@ -41,7 +41,7 @@ export default function Skills() {
               LANGUAGES.map((language, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ language.icon }</span>
-                  <h4 className="text-xl font-semibold">{ language.name }</h4>
+                  <h3 className="text-xl font-semibold">{ language.name }</h3>
                 </div>
               ))
             }
@@ -55,7 +55,7 @@ export default function Skills() {
               FRAMEWORKS.map((framework, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ framework.icon }</span>
-                  <h4 className="text-xl font-semibold">{ framework.name }</h4>
+                  <h3 className="text-xl font-semibold">{ framework.name }</h3>
                 </div>
               ))
             }
@@ -65,7 +65,7 @@ export default function Skills() {
               FRAMEWORKS.map((framework, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ framework.icon }</span>
-                  <h4 className="text-xl font-semibold">{ framework.name }</h4>
+                  <h3 className="text-xl font-semibold">{ framework.name }</h3>
                 </div>
               ))
             }
@@ -79,7 +79,7 @@ export default function Skills() {
               TOOLS.map((tool, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ tool.icon }</span>
-                  <h4 className="text-xl font-semibold">{ tool.name }</h4>
+                  <h3 className="text-xl font-semibold">{ tool.name }</h3>
                 </div>
               ))
             }
@@ -89,7 +89,7 @@ export default function Skills() {
               TOOLS.map((tool, i) => (
                 <div key={i} className="flex flex-col items-center space-y-3">
                   <span className="text-7xl">{ tool.icon }</span>
-                  <h4 className="text-xl font-semibold">{ tool.name }</h4>
+                  <h3 className="text-xl font-semibold">{ tool.name }</h3>
                 </div>
               ))
             }

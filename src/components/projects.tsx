@@ -40,7 +40,7 @@ export default function Projects() {
             {/* Info */}
             <div className="col-span-2 flex flex-col space-y-1 pr-3 py-1">
               <h3 className="text-2xl font-semibold">{ project.title }</h3>
-              <h5 className="text-xs italic">{ project.years }</h5>
+              <h4 className="text-xs italic">{ project.years }</h4>
               <p className="flex-grow text-md">{ project.description }</p>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function Projects() {
               {/* Info */}
               <div className="col-span-2 flex flex-col space-y-1 pr-3 py-1">
                 <h3 className="text-2xl font-semibold">{ project.title }</h3>
-                <h5 className="text-xs italic">{ project.years }</h5>
+                <h4 className="text-xs italic">{ project.years }</h4>
                 <p className="flex-grow text-md">{ project.description }</p>
               </div>
             </div>
