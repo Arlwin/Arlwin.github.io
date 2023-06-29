@@ -49,7 +49,7 @@ export default function Projects() {
       </div>
 
       {/* Desktop */}
-      <div className="hidden md:grid grid-cols-9 gap-x-5 gap-y-16">
+      <div className="hidden md:grid grid-cols-9 gap-x-5 gap-y-20">
         {
           PROJECTS.map((project, i) => (
             <div

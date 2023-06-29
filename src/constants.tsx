@@ -207,6 +207,13 @@ export const PROJECTS: {
     description: 'A simple website for checking out games using IGDB.',
     url: 'https://arlwin.github.io/gamewin',
   },
+  {
+    cover: '/projects/movieman.png',
+    title: 'Movieman',
+    years: '2023',
+    description: 'A simple mobile-first website for checking out movie information using TMDB.',
+    url: 'https://movieman-production.up.railway.app',
+  },
 ]
 
 export const CONTACTS: {
