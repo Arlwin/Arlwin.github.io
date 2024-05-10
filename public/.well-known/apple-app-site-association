@@ -7,6 +7,18 @@
         "paths": [
           "*"
         ]
+      },
+      {
+        "appID": "ZTL9QKKW8F.com.sunlifecorp.cpma.touchpoint.slocpi.ph.sit",
+        "paths": [
+          "*"
+        ]
+      },
+      {
+        "appID": "ZTL9QKKW8F.com.sunlifecorp.cpma.touchpoint.slocpi.ph.uat",
+        "paths": [
+          "*"
+        ]
       }
     ]
   }

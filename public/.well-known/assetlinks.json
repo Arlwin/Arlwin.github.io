@@ -8,5 +8,25 @@
         "12:68:CB:18:DC:64:3A:2E:55:82:B4:41:D0:9A:58:49:FE:3C:97:81:10:64:C4:E8:39:DC:86:85:DD:66:E4:86"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sunlifecorp.cpma.touchpoint.slocpi.ph.sit",
+      "sha256_cert_fingerprints": [
+        "12:68:CB:18:DC:64:3A:2E:55:82:B4:41:D0:9A:58:49:FE:3C:97:81:10:64:C4:E8:39:DC:86:85:DD:66:E4:86"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sunlifecorp.cpma.touchpoint.slocpi.ph.uat",
+      "sha256_cert_fingerprints": [
+        "12:68:CB:18:DC:64:3A:2E:55:82:B4:41:D0:9A:58:49:FE:3C:97:81:10:64:C4:E8:39:DC:86:85:DD:66:E4:86"
+      ]
+    }
   }
 ]
